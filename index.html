@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script>
+    function keliling(){
+        var keliling=Number(document.getElementById("sisi").value)*4
+        document.getElementById("keliling persegi").value = keliling
+    }
+    function luas(){
+        var luas=Number(document.getElementById("sisi").value)*
+        Number(document.getElementById("sisi").value)
+        document.getElementById("luas persegi").value = luas
+    }
+    function calculate(){
+        document.getElementById("luas persegi").value = luas
+        document.getElementById("keliling persegi"). value = keliling
+    }
+    </script>
+    <style>
+        body{
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    h1 {
+        font-family: "Times New Roman", Times, serif;
+      }
+    }
+    </style>
+    <h1 style="background-color: bisque;"
+
+</head>
+<body>
+    <h1 style="background-color:powderblue;">Kalkulator Matematik Persegi</h1>
+    <input type="image" src="persegi betulan.png">
+    <div>Rumus luas persegi: sisi x sisi</div>
+    <div>Rumus keliling persegi: 4 x sisi</div>
+    <div>Masukkan nilai sisi persegi:
+        <input type="number" class="fdd" id="sisi">
+    </div>
+    <p>Luas persegi</p>
+    <div>
+        <label for="fname">klik kolom</label>
+        <input type="button" id="luas persegi" value="" onclick="luas()">
+    </div>
+    <p>Keliling persegi</p>
+    <div>
+        <label for="fname">klik kolom:</label>
+        <input type="button" id="keliling persegi" value="" onclick="keliling()">
+</body>
+</html>
